@@ -25,7 +25,7 @@ def print_usage():
     print(" Options:")
     print(" --compress: Compresses the contents.")
     print("")
-    print("savegame_body compose_json <sav file in> <json body in> <raw body out> {options}")
+    print("savegame_body compose_json <sav file in> <json body in> <sav file out> {options}")
     print(" -> Replaces the body in a save file from a json representation.")
     print(" Options:")
     print(" --compress: Compresses the contents.")
