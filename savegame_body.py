@@ -190,7 +190,10 @@ class FledgeSerdes:
             deser_out.append(fn(None if (deser_in is None) else deser_in[i]))
         if deser_in is not None and self.body_in is not None:
             self.offs = offs_bak
+            body_out_bak=self.body_out
+            self.body_out=bytearray()
             self._serdes_genericarray(None) #Make sure self.offs goes forward by the original array size.
+            self.body_out=body_out_bak
         return deser_out
     def _serdes_ref(self, deser_in=None, enable_ref_string=True):
         if deser_in is None:
@@ -327,7 +330,10 @@ class FledgeSerdes:
         
         if deser_in is not None and self.body_in is not None:
             self.offs = offs_bak
+            body_out_bak=self.body_out
+            self.body_out=bytearray()
             self._serdes_variant(None) #Make sure self.offs goes forward by the original variant size.
+            self.body_out=body_out_bak
         
         return deser_out
     
