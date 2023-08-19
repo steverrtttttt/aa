@@ -11,7 +11,7 @@ The standard savegame location for the Steam release of the game is `<path\to\st
 ### Requirements
 
 The only thing needed is Python, 3.9 and 3.11 are tested. No extra packages need to be installed, even the `Windows embeddable package` variants of Python will do.
-Either launch with the absolute path to python.exe, or add python.exe to the PATH variable.
+Either launch with the absolute path to python.exe, or add the directory of python.exe to the PATH variable.
 
 ### Usage
 
