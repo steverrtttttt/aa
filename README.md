@@ -6,7 +6,7 @@ Supports the release build of Atlas Fallen (2023-08-12).
 
 The [savegame_body.py](savegame_body.py) script can unpack and repack the body portion of Atlas Fallen `.sav` files, either raw or as a more useful json representation.
 
-The standard savegame location for the Steam release of the game is `<path\to\steam>\userdata\<user id>\1230530\remote`-
+The standard savegame location for the Steam release of the game is `<path\to\steam>\userdata\<user id>\1230530\remote`
 
 ### Requirements
 
