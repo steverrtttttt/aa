@@ -195,7 +195,7 @@ class FledgeSerdes:
             self._serdes_genericarray(None) #Make sure self.offs goes forward by the original array size.
             self.body_out=body_out_bak
         return deser_out
-    def _serdes_ref(self, deser_in=None, enable_ref_string=True):
+    def _serdes_ref(self, deser_in=None, enable_ref_string=False):
         if deser_in is None:
             deser_in = [None,None,None,None]
         deser_out = [0,0,0]
